@@ -22,8 +22,20 @@
   
 
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
-	margin-left: 380px;
+	margin-left: 510px;
 }
+
+
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -1px;
+}
+
 
 .fa-facebook-square {
     margin-top: 10px;
