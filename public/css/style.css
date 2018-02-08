@@ -42,21 +42,29 @@
 /* ================== VIDEO ===================*/
 
 .video {
-    margin-top: 70px;
+    margin-top: 155px;
 }
 
 
 /* ================= BIOGRAPHIE ==================*/
 
 .biographie {
-    width: 550px;
-    margin-left: 655px;
-    margin-top: 45px;
-    font-size: 20px;
+    width: 691px;
+    margin-left: 612px;
+    margin-top: 70px;
+    font-size: 23px;
 }
 
+.h1bio {
+    margin-top: 95px;
+}
+
+/* ================= DISCOGRAPHIE ==================*/
 
 
+.discographie {
+    margin-top: 150px;
+}
 
 /* ================= FOOTER ==================*/
 
@@ -64,6 +72,6 @@ footer {
     background-color: #F7CEAB;
     color: white;
     height: 50px;
-    margin-top: 90px;
+    margin-top: 180px;
     padding-top: 15px;
 }
