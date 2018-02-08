@@ -1,0 +1,68 @@
+/* ============ ANIMATION LETTERS ============*/
+
+
+/* ================ NAVBAR ============ */
+
+.navbar {
+    background: #F7CEAB;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #fff;
+    font-weight: bold;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    color: #0095B2;
+    font-weight: bold;
+}
+
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+    margin-left: 380px;
+}
+
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -1px;
+}
+
+.fa-facebook-square {
+    margin-top: 10px;
+}
+
+
+
+
+/* ================== VIDEO ===================*/
+
+.video {
+    margin-top: 70px;
+}
+
+
+/* ================= BIOGRAPHIE ==================*/
+
+.biographie {
+    width: 550px;
+    margin-left: 460px;
+    margin-top: 45px;
+}
+
+
+
+
+/* ================= FOOTER ==================*/
+
+footer {
+    background-color: #F7CEAB;
+    color: white;
+    height: 50px;
+    margin-top: 90px;
+    padding-top: 15px;
+}
