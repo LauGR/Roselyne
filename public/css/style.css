@@ -133,3 +133,30 @@ footer {
 /* =================================================== MEDIA QUERIES ======================================================================*/
 
 
+@media all and (max-width:500px) {
+    .navbar-default .navbar-collapse, .navbar-default .navbar-form{
+     margin : 0 auto ;
+    }
+    .firstconcert {
+        margin: 0 auto;
+    }
+    .biographie{
+        margin: 0 auto;
+        width: 378px;
+    }
+}
+
+
+@media all and (min-width:768px) and (max-width:1024px) {
+    .navbar-nav {
+        display: inline-flex;
+        margin-left : -545px;
+    }
+    .fa-facebook-square {
+        margin-top: 3px;
+    }
+    .biographie {
+        margin-left: 36px;
+    }
+   
+}
