@@ -1,4 +1,6 @@
 // SET UP GET ALL THE TOOLS WE NEED 
+const http = require('http');
+const routes = require('./app/routes')
 const express = require('express');
 const ejs = require('ejs');
 const bodyParser = require('body-parser');
@@ -8,6 +10,9 @@ const morgan = require('morgan');
 const expressLayouts = require('express-ejs-layouts');
 const dotEnv = require('dotenv').load();
 const nodemailer = require("nodemailer");
+const server = http.createServer(app);
+
+
 
 
 // Set up the all routes 
@@ -63,5 +68,6 @@ septembre201722(app);
 septembre20172(app);
 temoignage(app);
 
+server.listen(port);
 
 module.exports = app;
