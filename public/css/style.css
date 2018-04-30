@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+* {
+    box-sizing: border-box; 
+    font-family: 'Roboto';
+}
+
 /* ================ NAVBAR ============ */
 
 .navbar {
@@ -62,13 +68,11 @@
     margin-top: 6px;
 }
 
-
 /* ================== VIDEO ===================*/
 
 .video {
     margin-top: 155px;
 }
-
 
 /* ================= BIOGRAPHIE ==================*/
 
@@ -83,14 +87,12 @@
     margin-top: 95px;
 }
 
-
 /* ================= DISCOGRAPHIE ==================*/
 
 .discographie {
     margin-top: 60px;
     margin-bottom: -60px;
 }
-
 
 /*================= PHOTOS ====================*/
 
@@ -115,7 +117,6 @@
     margin-top: -300px;
 }
 
-
 /* ================= FOOTER ==================*/
 
 footer {
@@ -125,7 +126,6 @@ footer {
     margin-top: 195px;
     padding-top: 15px;
 }
-
 
 /* =================================================== MEDIA QUERIES ======================================================================*/
 
@@ -139,55 +139,119 @@ footer {
     }
     .biographie {
         margin: 0 auto;
-        width: 378px;
+        width: 235px;
     }
-    
     .firstconcert {
         margin-top: 0px;
         margin-bottom: 215%;
         margin-left: 0px;
     }
-
     .avril9 {
         margin-top: 0px;
         margin-bottom: 350%;
     }
-
     .septembre14 {
         margin-top: 0px;
         margin-bottom: 230%;
     }
-    
     .mai4 {
         margin-bottom: 535%;
     }
-
     .mai13 {
         margin-bottom: 345%;
     }
-
     .jerryp {
         margin-top: 10px;
     }
     .septembre2 {
         margin-bottom: 325%;
     }
-
     .septembre22 {
         margin-bottom: 425%;
     }
-
 }
 
-@media all and (min-width:768px) and (max-width:1024px) {
+@media all and (min-width:768px) and (max-width:1023px) {
+    .navbar-nav {
+        display: inline-flex;
+        margin-left: -545px;
+    }
+    .navbar-right {
+        margin-right: -36px;
+    }
+    .biographie {
+        margin-left: 36px;
+    }
+    .fa-facebook-square {
+        margin-top: 6px;
+    }
+    .firstconcert {
+        margin-top: 0px;
+        margin-bottom: 215%;
+        margin-left: 0px;
+    }
+    .avril9 {
+        margin-top: 0px;
+        margin-bottom: 350%;
+    }
+    .septembre14 {
+        margin-top: 0px;
+        margin-bottom: 230%;
+    }
+    .mai4 {
+        margin-bottom: 535%;
+    }
+    .mai13 {
+        margin-bottom: 345%;
+    }
+    .jerryp {
+        margin-top: 10px;
+    }
+    .septembre2 {
+        margin-bottom: 325%;
+    }
+    .septembre22 {
+        margin-bottom: 425%;
+    }
+}
+
+@media all and (min-width:1024px) and (max-width:1370px) {
     .navbar-nav {
         display: inline-flex;
         margin-left: -545px;
     }
     .fa-facebook-square {
-        margin-top: 3px;
+        margin-top: 6px;
     }
     .biographie {
-        margin-left: 36px;
+        margin-left: 152px;
+    }
+    .firstconcert {
+        margin-top: 0px;
+        margin-bottom: 215%;
+        margin-left: 0px;
+    }
+    .avril9 {
+        margin-top: 0px;
+        margin-bottom: 350%;
+    }
+    .septembre14 {
+        margin-top: 0px;
+        margin-bottom: 230%;
+    }
+    .mai4 {
+        margin-bottom: 535%;
+    }
+    .mai13 {
+        margin-bottom: 345%;
+    }
+    .jerryp {
+        margin-top: 10px;
+    }
+    .septembre2 {
+        margin-bottom: 325%;
+    }
+    .septembre22 {
+        margin-bottom: 425%;
     }
 }
