@@ -14,12 +14,12 @@ module.exports = (app, passport) => {
     app.get('/validationemail', (req, res) => {
         res.render('validationEmail', {
             layout: 'layoutContact'
-        })
+        });
     })
     app.get('/nonvalidationemail', (req, res) => {
         res.render('nonvalidationEmail', {
             layout: 'layoutContact'
-        })
+        });
     })
 
     app.post('/email', (req, res) => {
