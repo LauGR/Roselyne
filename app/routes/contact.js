@@ -7,18 +7,18 @@ module.exports = (app, passport) => {
 
     app.get('/contact', (req, res) => {
         res.render('contact', {
-            layout: 'layoutContact'
+            layout: 'layout'
         });
     })
 
     app.get('/validationemail', (req, res) => {
         res.render('validationEmail', {
-            layout: 'layoutContact'
+            layout: 'layout'
         });
     })
     app.get('/nonvalidationemail', (req, res) => {
         res.render('nonvalidationEmail', {
-            layout: 'layoutContact'
+            layout: 'layout'
         });
     })
 
