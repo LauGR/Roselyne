@@ -129,7 +129,7 @@ form {
     background: #F7CEAB;
     color: #fff;
     width: auto;
-    height: auto;
+    height: 630px;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
@@ -150,16 +150,19 @@ label {
 }
 
 #submit {
-    background: #F7CEAB;
-    border: 5px #F7CEAB ridge;
-    font-size: 24px;
     margin-left: -70%;
     margin-top: 40%;
+    background: #45b558;
+    border: none;
     color: #fff;
+    font-size: 24px;
+    font-weight: bold;
 }
 
-#submit :hover {
-    color: #0095B2;
+#submit:hover {
+    color: #fff;
+    background: #0095B2;
+    border: none;
     font-weight: bold;
 }
 
@@ -189,21 +192,17 @@ footer {
         width: 235px;
     }
     .contact {
-        margin-left: 10px;
-        margin-top: 12%;
-        height: 550px;
+        margin-left: 30px;
+        margin-top: 33px;
     }
-
     .contact h1 {
         font-size: 28px;
     }
-
     .form-contact {
         margin-top: -30px;
-        
     }
     #submit {
-        margin-left: -66px;
+        margin-left: -58px;
         margin-top: 40px;
     }
     footer {
@@ -219,12 +218,18 @@ footer {
     .navbar-right {
         margin-right: -36px;
     }
-    .biographie {
-        margin-left: 36px;
-    }
     .fa-facebook-square {
         margin-top: 6px;
     }
+    .biographie {
+        margin-left: 36px;
+    }
+
+    .contact {
+        margin-left: 212px;
+        margin-top: 102px;
+    }
+
 }
 
 @media all and (min-width:1024px) and (max-width:1370px) {
@@ -238,6 +243,7 @@ footer {
     .biographie {
         margin-left: 152px;
     }
+    
 }
 
 @media all and (min-width:500px) and (max-width:1370px) {
@@ -269,4 +275,10 @@ footer {
     .septembre22 {
         margin-bottom: 425%;
     }
+
+    .contact {
+        margin-left: 320px;
+        margin-top: 145px;
+    }
+
 }
