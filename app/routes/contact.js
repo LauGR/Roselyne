@@ -24,18 +24,17 @@ module.exports = (app, passport) => {
 
     app.post('/email', (req, res) => {
         let transporter = nodemailer.createTransport({
-            service: 'Gmail',
-            host: 'smtp.gmail.com',
+            host: 'mail.roselyne.re',
             secure: true,
             port: 465,
             auth: {
-                user: process.env.EMAIL,
-                pass: process.env.PASS
+                user: '_mainaccount@roselyne.re',
+                pass: '3ufjSHPD1WVtxm'
             }
         });
         let mail = {
             from: req.body.email,
-            to: process.env.EMAIL,
+            to: '_mainaccount@roselyne.re',
             subject: req.body.subject,
             html: req.body.name.toUpperCase() + req.body.email + req.body.message
         }

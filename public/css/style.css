@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 * {
-    box-sizing: border-box; 
+    box-sizing: border-box;
     font-family: 'Roboto';
 }
 
@@ -117,191 +117,50 @@
     margin-top: -300px;
 }
 
-
 /* ======================= CONTACT  =======================*/
 
-input:focus {
-    outline: none;
+form {
+    margin-top: -30px;
 }
 
 .contact {
-    width: 100%;
-    height: 100%;
-}
-
-.xycenter {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.signup-wrapper {
-    max-width: 600px;
-    width: 90%;
-    text-align: center;
-    background-color: white;
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-    color: #666;
-}
-
-.signup-wrapper header {
-    background-color: #F7CEAB;
-    height: 40px;
-    text-align: center;
-    position: relative;
-}
-
-span.dot {
-    display: inline-block;
-    border-radius: 50%;
-    width: 12px;
-    height: 12px;
-    margin: 0 4px;
-    background-color: #eaeaea;
-}
-
-span.dot.active {
-    background-color: white;
-}
-
-.signup-wrapper h2 {
-    margin-bottom: 0;
-    font-size: 23px;
-}
-
-.signup-wrapper h4 {
+    margin-top: 10%;
+    margin-left: 40%;
+    background: #F7CEAB;
     color: #fff;
-    font-size: 23px;
+    width: auto;
+    height: auto;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
-.signup-wrapper p {
-    margin: 5px;
+.form-contact {
+    margin-left: 22%;
+    max-width: 50px;
+    text-align: center;
 }
 
-.cool-form {
-    max-width: 600px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 10%;
-    color: #aaa;
+input,
+textarea {
+    margin-left: -10px;
+    color: #000;
 }
 
-.cool-form>div {
-    position: relative;
+label {
     margin-top: 20px;
 }
 
-.cool-form>div>label {
-    position: absolute;
-    top: 0px;
-    left: 1px;
-    transition: all 0.3s;
+#submit {
+    background: #F7CEAB;
+    border: 5px #F7CEAB ridge;
+    font-size: 24px;
+    margin-left: -70%;
+    margin-top: 40%;
+    color: #fff;
 }
 
-.cool-form>div>.requirements {
-    display: none;
-    font-size: 12px;
-    font-weight: 400;
-}
-
-.cool-form>div>input {
-    width: 100%;
-    padding: 10px;
-    color: #888;
-    border: none;
-    border-bottom: 2px solid #aaa;
-    transition: all 0.3s;
-}
-
-.cool-form>div>input:focus {
-    border-bottom-color: #F7CEAB;
-}
-
-.cool-form>div>input:focus+label {
-    font-size: 10px;
-    text-transform: uppercase;
-    font-weight: 700;
-    top: -10px;
-    left: 0;
-    color: #F7CEAB;
-}
-
-/* Input is valid, not empty */
-
-.cool-form>div>input:valid:not(:placeholder-shown) {
-    border-bottom-color: #ff9c00;
-}
-
-.cool-form>div>input:valid:not(:placeholder-shown)+label {
-    font-size: 10px;
-    text-transform: uppercase;
-    font-weight: 700;
-    top: -10px;
-    left: 0;
-    color: #ff9c00;
-}
-
-/* Input is not vald, not in focus, not empty */
-
-.cool-form>div>input:invalid:not(:focus):not(:placeholder-shown) {
-    border-bottom-color: #FF3319;
-}
-
-.cool-form>div>input:invalid:not(:focus):not(:placeholder-shown)+label {
-    font-size: 10px;
-    text-transform: uppercase;
-    font-weight: 700;
-    top: -10px;
-    left: 0;
-    color: #FF3319;
-}
-
-/* Show Requirements on invalid non-empty forms */
-
-.cool-form>div>input:invalid:not(:placeholder-shown)~.requirements {
-    display: block;
-    color: #FF3319;
-}
-
-/* Input is not valid, is in focus, not empty */
-
-.cool-form>div>input:invalid:focus:not(:placeholder-shown) {
-    border-bottom-color: #F8F8F8;
-}
-
-.cool-form>div>input:invalid:focus:not(:placeholder-shown)+label {
-    font-size: 10px;
-    text-transform: uppercase;
-    font-weight: 700;
-    top: -10px;
-    left: 0;
-    color: #df7c7c;
-}
-
-.cool-form input[type=submit] {
-    background-color: #F7CEAB;
-    color: white;
-    border: none;
+#submit :hover {
+    color: #0095B2;
     font-weight: bold;
-    padding: 15px 30px;
-    text-transform: uppercase;
-    margin: 20px;
-}
-
-.cool-form input[type=submit]:hover {
-    background-color: #ff9c00;
-}
-
-#contact .navbar-default .navbar-collapse {
-    background: #272626;
-}
-
-textarea {
-    width: 100%;
-    border-radius: 12px;
-    margin-top: 51px;
-    border: solid 2px #D6D4D4;
 }
 
 /* ================= FOOTER ==================*/
@@ -309,8 +168,9 @@ textarea {
 footer {
     background-color: #F7CEAB;
     color: white;
+    width: auto;
     height: 50px;
-    margin-top: 44%;
+    margin-top: 20%;
     padding-top: 15px;
 }
 
@@ -328,20 +188,27 @@ footer {
         margin: 0 auto;
         width: 235px;
     }
-    .xycenter {
-        top: 55%;
+    .contact {
+        margin-left: 10px;
+        margin-top: 12%;
+        height: 550px;
     }
-    .signup-wrapper h2 {
-        font-size: 15px;
+
+    .contact h1 {
+        font-size: 28px;
     }
-    .signup-wrapper h4 {
-        font-size: 17px;
+
+    .form-contact {
+        margin-top: -30px;
+        
+    }
+    #submit {
+        margin-left: -66px;
+        margin-top: 40px;
     }
     footer {
-        margin-top: -50px;
+        margin-top: 100%;
     }
-    
-    
 }
 
 @media all and (min-width:768px) and (max-width:1023px) {
@@ -358,7 +225,6 @@ footer {
     .fa-facebook-square {
         margin-top: 6px;
     }
-
 }
 
 @media all and (min-width:1024px) and (max-width:1370px) {
@@ -372,7 +238,6 @@ footer {
     .biographie {
         margin-left: 152px;
     }
-
 }
 
 @media all and (min-width:500px) and (max-width:1370px) {

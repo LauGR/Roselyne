@@ -1,53 +1,28 @@
 <%- contentFor('contact') %>
 
-    <div class="contact">
+    <div class="contact col-xs-12 col-sm-12 col-md-6 col-lg-6">
 
-        <div class="container">
-            <div class="row">
-                <div class="signup-wrapper  xycenter">
-                    <header>
-                        <div class="xycenter">
-                     <h4>Formulaire de contact</h4>
-                        </div>
-                    </header>
+        <h1 class="text-center">Formulaire de contact</h1>
 
-                    <h2>Vous souhaitez obtenir des renseignements?
-                        <br> En quoi puis-je vous renseignez?</h2>
+        <hr>
 
+        <form action="/email" method="post">
+            <div class="form-contact">
+                <label for="name"> Nom</label>
+                <input type="text" name="name" id="name" required placeholder="Entrez votre Nom">
 
-                    <form class="cool-form" role="form" method="post" action="/email">
-                        <div>
-                            <input type="text" name="name" id="name" placeholder=" " required />
-                            <label for="name">Nom Prénom</label>
-                        </div>
+                <label for="email"> Email</label>
+                <input type="email" name="email" id="email" required placeholder="Entrez votre Mail">
 
+                <label for="Subject"> Sujet</label>
+                <input type="text" name="subject" id="subject" required placeholder="Entrez votre Sujet">
 
+                <label for="message">Message</label>
 
-                        <div>
-                            <input type="email" name="email" id="email" placeholder=" " required />
-                            <label for="email">Email</label>
-                            <div class="requirements">
-                                Adresse email non valide
-                            </div>
-                        </div>
+                <textarea name="message" id="message" rows="5" required placeholder="Entrez votre message"></textarea>
 
-
-                        <div>
-                            <input type="text" name="subject" id="subject" placeholder=" " required />
-                            <label for="subject">Sujet</label>
-                        </div>
-
-
-                        <textarea name="message" rows="8" id="" placeholder="Ajoutez vos message ici..">
-
-                        </textarea>
-
-
-                        <input type="submit" id="submit" value="Envoyez" />
-                    </form>
-
-                </div>
+                <input type="submit" id="submit" value="Envoyez votre message">
 
             </div>
-        </div>
+        </form>
     </div>
