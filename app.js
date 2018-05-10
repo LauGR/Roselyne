@@ -5,15 +5,12 @@ const express = require('express');
 const ejs = require('ejs');
 const bodyParser = require('body-parser');
 const app = express();
-const port = process.env.PORT || 4000;
+const port = process.env.PORT || 2000;
 const morgan = require('morgan');
 const expressLayouts = require('express-ejs-layouts');
 const dotEnv = require('dotenv').load();
 const nodemailer = require("nodemailer");
 const server = http.createServer(app);
-
-
-
 
 // Set up the all routes 
 const actions = require('./app/routes/actions');
@@ -34,16 +31,15 @@ const mai201713 = require('./app/routes/130517');
 const septembre201722 = require('./app/routes/220917');
 const temoignage = require('./app/routes/temoignage')
 
-
-
 // use  your engine template and configure the folder
-
 app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs')
 
 // Set up our express application
 app.use(bodyParser.json()); // get information from html forms
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.urlencoded({
+    extended: true
+}));
 app.use(morgan('dev')); // log every request to the console
 app.use('/css', express.static(__dirname + '/node_modules/bootstrap/dist/css/')); // expression static for bootstrap ( in node_modules)
 app.use(express.static(__dirname + '/public')); // search all ressources 

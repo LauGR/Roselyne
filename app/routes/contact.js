@@ -1,10 +1,10 @@
 const dotEnv = require('dotenv').load();
 const nodemailer = require("nodemailer");
+
 module.exports = (app, passport) => {
 
 
     // CONTACT FORM
-
     app.get('/contact', (req, res) => {
         res.render('contact', {
             layout: 'layout'
@@ -24,20 +24,22 @@ module.exports = (app, passport) => {
 
     app.post('/email', (req, res) => {
         let transporter = nodemailer.createTransport({
-            host: 'mail.roselyne.re',
+            service: 'Gmail',
+            host: 'smtp.gmail.com',
             secure: true,
             port: 465,
             auth: {
-                user: '_mainaccount@roselyne.re',
-                pass: '3ufjSHPD1WVtxm'
+                user: process.env.EMAIL,
+                pass: process.env.PASS
             }
         });
         let mail = {
             from: req.body.email,
-            to: '_mainaccount@roselyne.re',
+            to: process.env.EMAIL,
             subject: req.body.subject,
-            html: req.body.name.toUpperCase() + req.body.email + req.body.message
+            html: " nom : " + req.body.name + " email : " + req.body.email + "subject :" + req.body.subject + " message : " + req.body.message
         }
+
         transporter.sendMail(mail, (error, response) => {
             if (error) {
                 console.log("Mail non envoyé");
@@ -49,6 +51,5 @@ module.exports = (app, passport) => {
             transporter.close();
         });
     })
-
 
 }
