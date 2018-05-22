@@ -10,6 +10,7 @@ const morgan = require('morgan');
 const expressLayouts = require('express-ejs-layouts');
 const dotEnv = require('dotenv').load();
 const nodemailer = require("nodemailer");
+const favicon = require('express-favicon');
 const server = http.createServer(app);
 
 // Set up the all routes 
@@ -29,7 +30,8 @@ const mai20174 = require('./app/routes/40517');
 const septembre20172 = require('./app/routes/20917');
 const mai201713 = require('./app/routes/130517');
 const septembre201722 = require('./app/routes/220917');
-const temoignage = require('./app/routes/temoignage')
+const temoignage = require('./app/routes/temoignage');
+const mentionslegales = require('./app/routes/mentionslegales');
 
 // use  your engine template and configure the folder
 app.set('views', __dirname + '/views');
@@ -43,6 +45,7 @@ app.use(bodyParser.urlencoded({
 app.use(morgan('dev')); // log every request to the console
 app.use('/css', express.static(__dirname + '/node_modules/bootstrap/dist/css/')); // expression static for bootstrap ( in node_modules)
 app.use(express.static(__dirname + '/public')); // search all ressources 
+app.use(favicon(__dirname + '/public/favicon.ico'));; // to load favicon in /img
 app.use(expressLayouts);
 
 // routes
@@ -63,6 +66,7 @@ mai201713(app);
 septembre201722(app);
 septembre20172(app);
 temoignage(app);
+mentionslegales(app);
 
 server.listen(port);
 
