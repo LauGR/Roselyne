@@ -68,10 +68,17 @@
     margin-top: 6px;
 }
 
-/* ================== VIDEO ===================*/
+/* ================== ACCUEIL ===================*/
 
 .video {
     margin-top: 155px;
+}
+
+.bienvenue {
+    color: #0095B2;
+    margin-top: 130px;
+    margin-bottom: -7px;
+    font-size: 78px;
 }
 
 /* ================= BIOGRAPHIE ==================*/
@@ -90,7 +97,7 @@
 /* ================= DISCOGRAPHIE ==================*/
 
 .discographie {
-    margin-top: 25%;
+    margin-top: 95PX;
     margin-bottom: -60px;
 }
 
@@ -103,6 +110,10 @@
 
 .avril9 {
     margin-top: 130px;
+}
+
+.septembre2 {
+    margin-top: 85px;
 }
 
 .septembre14 {

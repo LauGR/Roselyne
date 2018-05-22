@@ -45,7 +45,9 @@ app.use(bodyParser.urlencoded({
 app.use(morgan('dev')); // log every request to the console
 app.use('/css', express.static(__dirname + '/node_modules/bootstrap/dist/css/')); // expression static for bootstrap ( in node_modules)
 app.use(express.static(__dirname + '/public')); // search all ressources 
-app.use(favicon(__dirname + '/public/favicon.ico'));; // to load favicon in /img
+app.use(favicon(__dirname + '/public/favicon.ico'));; // to load favicon ( in folder public)
+app.use(express.static(__dirname+'/node_modules/animate.css/')) //expression static for animate css
+app.use(express.static(__dirname+'/node_modules/wowjs/dist')) //expression static for wowjs
 app.use(expressLayouts);
 
 // routes
