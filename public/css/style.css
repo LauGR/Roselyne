@@ -183,10 +183,38 @@ footer {
     background-color: #F7CEAB;
     color: white;
     width: 1904px;
-    height: auto;
+    height: 50px;
     margin-top: 375px;
-    padding-top: 15px;
     margin-left: -14px;
+}
+
+footer i {
+    margin-top: -25px;
+}
+
+footer p {
+    padding-top: 15px;
+}
+
+.mentions {
+    margin-top: -30px;
+}
+
+
+/*===================  Scroll To Top ======================== */
+
+.fa-arrow-circle-up {
+    width: 40px;
+    height: 42px;
+    position: fixed;
+    bottom: 60px;
+    right: 11px;
+    background: #fff;
+    color: #F7CEAB;
+    font-size: 40px;
+    border-radius: 100%;
+    cursor: pointer;
+    padding: 1px 0px 0px 3px;
 }
 
 /* =================================================== MEDIA QUERIES ======================================================================*/

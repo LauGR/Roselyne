@@ -29,13 +29,13 @@ module.exports = (app, passport) => {
             secure: true,
             port: 465,
             auth: {
-                user: process.env.EMAIL,
-                pass: process.env.PASS
+                user: 'zanfanbondie974@gmail.com',
+                pass: 'lokervayan974'
             }
         });
         let mail = {
             from: req.body.email,
-            to: process.env.EMAIL,
+            to: 'zanfanbondie974@gmail.com',
             subject: req.body.subject,
             html: " nom : " + req.body.name + " email : " + req.body.email + "subject :" + req.body.subject + " message : " + req.body.message
         }
