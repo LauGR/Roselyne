@@ -9,7 +9,7 @@ $(document).ready(function () {
     new WOW().init();
 
     $(window).scroll(function () {
-        if ($(this).scrollTop() >= 90) {
+        if ($(this).scrollTop() >= 590) {
           $(".Top").fadeIn();
         } else {
           $(".Top").fadeOut();
@@ -17,7 +17,7 @@ $(document).ready(function () {
       });
       $(".Top").click(function () {
         $("html,body").stop().animate({
-          scrollTop: 0
+          scrollTop: 50
         });
       });
 });
