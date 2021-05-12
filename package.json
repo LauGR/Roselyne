@@ -22,7 +22,7 @@
     "gulp-less": "^3.4.0",
     "gulp-sass": "^3.1.0",
     "morgan": "^1.9.0",
-    "nodemailer": "^4.6.4",
+    "nodemailer": "^6.4.16",
     "nodemon": "^1.19.1",
     "npm": "^6.11.1",
     "path": "^0.12.7",
